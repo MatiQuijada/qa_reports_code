@@ -176,6 +176,9 @@ def main():
         df_comparacion = comparar_datos(df_saf, df_banner)
 
         if df_comparacion is not None and not df_comparacion.empty:
+            if "Celular" in df_comparacion.columns:
+                df_comparacion["Celular"] = df_comparacion["Celular"].astype(str)
+                
             st.write("### Resultado de la Comparación:")
             st.dataframe(df_comparacion)
 
