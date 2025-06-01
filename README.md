@@ -69,7 +69,7 @@ requirements.txt       # Python dependencies
 
 ## Author
 
-Developed by [Your Name].
+Developed by Matias Quijada.
 
 ---
 
